@@ -153,14 +153,27 @@ export default function LoginPage() {
 
           <div>
             <Button
-              type="submit"
-              disabled={isLoading}
-              className="w-full flex justify-center py-2 px-4"
-            >
-              {isLoading
-                ? "Memproses..."
-                : "Masuk"}
-            </Button>
+  type="submit"
+  disabled={isLoading}
+  className="
+    w-full
+    flex
+    justify-center
+    items-center
+    rounded-lg
+    bg-emerald-600
+    hover:bg-emerald-700
+    text-white
+    py-2.5
+    px-4
+    font-medium
+    transition-colors
+    disabled:opacity-50
+    disabled:cursor-not-allowed
+  "
+>
+  {isLoading ? "Memproses..." : "Masuk"}
+</Button>
           </div>
         </form>
 
