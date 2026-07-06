@@ -272,7 +272,7 @@ const filteredNews = newsData.filter((item) => {
                           <div className="h-10 w-10 rounded overflow-hidden bg-gray-100 flex-shrink-0">
 
                             <img
-                              src={`http://localhost:3000${item.imageUrl}`}
+                              src={`${process.env.NEXT_PUBLIC_API_URL}${item.imageUrl}`}
                               alt={
                                 item.title
                               }

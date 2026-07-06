@@ -2,7 +2,7 @@ import axios from 'axios'
 import Cookies from 'js-cookie'
 
 const API_URL =
-  'http://localhost:3000'
+process.env.NEXT_PUBLIC_API_URL!
 
 export const dashboardService = {
   async getDashboard() {
